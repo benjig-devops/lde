@@ -24,7 +24,7 @@ cursor = conn.cursor (cursor_factory = psycopg2.extras.DictCursor)
 log_file = open ("domain_updates.log", "a")
 
 # Remove half the API domains for testing deleting.
-remove_half_api = True
+remove_half_api = False
 
 for domain_query in domain_queries:
 	# Get domain_query_id form our database, add if not 
